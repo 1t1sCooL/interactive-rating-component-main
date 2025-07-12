@@ -1,0 +1,119 @@
+@font-face{
+    font-family: 'Overpass';
+    src: url('Overpass/Overpass-VariableFont_wght.ttf');
+}
+:root{
+    --Orange500: hsl(25, 97%, 53%);
+    --White: hsl(0, 100%, 100%);
+    --Grey500: hsl(217, 12%, 63%);
+    --Grey900: hsl(213, 19%, 18%);
+    --Grey950: hsl(216, 12%, 8%);
+}
+.hidden{
+    display: none;
+}
+body{
+    font-family: 'Overpass';
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background: var(--Grey950);
+    color: var(--Grey500);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.select{
+    display: flex;
+    flex-direction: column;
+    padding: 6vh 2.5vw;
+    margin: 20vh 0 0 0;
+    width: 28vw;
+    border: 3px solid var(--Grey950);
+    background: var(--Grey900);
+    border-radius: 5vh;
+    box-shadow: inset 0 -10vh 20vh 2vh var(--Grey950);
+    align-items: flex-start;
+}
+.icon-star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--Grey900);
+    border-radius: 50%;
+}
+.icon-star svg{
+    transform: scale(1);
+}
+h2{
+    font-size: 4.5vh;
+    margin-top: 6vh;
+    margin-bottom: 1.5vh;
+    color: var(--White);
+}
+p{
+    margin-top: 1vh;
+}
+
+input[type='radio']{
+     appearance: none;
+     position: absolute;
+}
+label{
+    padding: 6px 5px 5px 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--Grey900);
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1rem;
+    line-height: 1;
+    font-family: inherit;
+}
+label::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+label:hover{
+    background-color: var(--Orange500);
+    color: var(--Grey950)
+}
+input[type='radio']:checked + label{
+    background-color: var(--White);
+    color: var(--Grey950);
+}
+.radio-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1.7vh;
+    margin-bottom: 5vh;
+    
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    text-transform: uppercase;
+    min-height: 7vh;
+    height: 9vh;
+    border: 3px solid var(--Grey950);
+    border-radius: 4vw;
+    letter-spacing: .2rem;
+    font-weight: 700;
+}
