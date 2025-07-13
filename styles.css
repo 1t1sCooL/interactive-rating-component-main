@@ -154,6 +154,7 @@ form{
 }
 .p-wrap{
     text-align: center;
+    margin-bottom: 2px;
 }
 .second{
     align-items: center;
@@ -161,7 +162,7 @@ form{
 @media(max-width: 376px){
     .select{
         width: 90%;
-        margin: 20px;
+        margin: 0 20px;
         border-radius: 15px;
         padding: 25px;
     }
