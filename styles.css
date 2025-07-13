@@ -172,6 +172,11 @@ form{
     }
     input[type="radio"] + label {
         -webkit-tap-highlight-color: transparent;
+         -webkit-touch-callout: none;
+         -webkit-user-drag: none;
+         user-select: none;
+        -webkit-user-select: none;
+        pointer-events: none;
     }
 }
 @media (hover: none) {
