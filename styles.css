@@ -190,3 +190,35 @@ form{
 .hidden{
     display: none;
 }
+/* Добавьте эти правила в ваш существующий CSS */
+
+/* Убирает подсветку при тапе на всех интерактивных элементах */
+button, input, label, a {
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+}
+
+/* Для iOS Safari - убирает серый оверлей */
+input, textarea, button, select, a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* Убирает outline только для touch-устройств */
+@media (hover: none) {
+  .btn:focus, 
+  input[type="radio"]:focus + label {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+/* Отключает выделение текста при тапе */
+label {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Для Android - отключает голубую подсветку */
+input[type="radio"] + label {
+  -webkit-touch-callout: none;
+}
