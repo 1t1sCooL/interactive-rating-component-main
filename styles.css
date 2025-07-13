@@ -166,19 +166,6 @@ form{
         border-radius: 15px;
         padding: 25px;
     }
-    .btn {
-        -webkit-tap-highlight-color: transparent;
-        outline: none;
-    }
-    input[type="radio"] + label {
-        -webkit-tap-highlight-color: transparent;
-         -webkit-touch-callout: none;
-         -webkit-user-drag: none;
-         user-select: none;
-        -webkit-user-select: none;
-        pointer-events: none;
-        outline: none;
-    }
 }
 @media (hover: none) {
   .btn:focus, 
