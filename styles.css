@@ -182,7 +182,7 @@ form{
     box-shadow: none;
   }
 }
-input[type="radio"] + label{
+input[type="radio"] {
   position: absolute;
   opacity: 0;
 }
