@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Vercel](https://interactive-rating-component-main-plum.vercel.app/)
+- Live Site URL: [mmalabugin.ru/InteractiveRatingComponent/](https://mmalabugin.ru/InteractiveRatingComponent/)
 
 ### Built with
 
