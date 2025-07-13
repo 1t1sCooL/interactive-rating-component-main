@@ -9,7 +9,7 @@ btn.onclick = function(event){
     for(const radio of radios){
         if(radio.checked){
             first.classList.toggle('hidden');
-            second.classList.toggle('hidden');
+            second.classList.toggle('hidden');  
             selectRating = radio.value;
             break;
         }
