@@ -167,13 +167,6 @@ form{
         padding: 25px;
     }
 }
-@media (hover: none) {
-  .btn:focus, 
-  input[type="radio"]:focus + label {
-    outline: none;
-    box-shadow: none;
-  }
-}
 .hidden{
     display: none;
 }
