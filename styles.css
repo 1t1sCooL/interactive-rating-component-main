@@ -9,9 +9,7 @@
     --Grey900: hsl(213, 19%, 18%);
     --Grey950: hsl(216, 12%, 8%);
 }
-.hidden{
-    display: none;
-}
+
 body{
     font-family: 'Overpass';
     font-size: 16px;
@@ -27,15 +25,16 @@ main{
     justify-content: center;
 }
 .select{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    padding: 6vh 2.5vw;
-    margin: 20vh 0 0 0;
-    width: 28vw;
+    padding: 1.8% 2.2% 1.8% 1.8%;
+    margin: 10% 0 0 0;
+    width: 370px;
     border: 3px solid var(--Grey950);
     background: var(--Grey900);
-    border-radius: 5vh;
-    box-shadow: inset 0 -10vh 20vh 2vh var(--Grey950);
+    border-radius: 30px;
+    box-shadow: inset 0 -100px 200px 20px var(--Grey950);
     align-items: flex-start;
 }
 .icon-star{
@@ -43,22 +42,25 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: var(--Grey900);
     border-radius: 50%;
 }
 .icon-star svg{
-    transform: scale(1);
+    transform: scale(.9);
 }
 h2{
-    font-size: 4.5vh;
-    margin-top: 6vh;
-    margin-bottom: 1.5vh;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     color: var(--White);
 }
 p{
-    margin-top: 1vh;
+    line-height: 140%;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
 input[type='radio']{
@@ -66,16 +68,16 @@ input[type='radio']{
      position: absolute;
 }
 label{
-    padding: 6px 5px 5px 5px;
+    padding: 5.5px 5px 5px 5.5px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 50px;
-    height: 50px;
+    width: 32px;
+    height: 32px;
     background-color: var(--Grey900);
     cursor: pointer;
     border-radius: 50%;
-    font-size: 1rem;
+    font-size: .9rem;
     line-height: 1;
     font-family: inherit;
 }
@@ -86,10 +88,12 @@ label::after {
     vertical-align: middle;
 }
 label:hover{
+    transition: all ease .2s;
     background-color: var(--Orange500);
     color: var(--Grey950)
 }
 input[type='radio']:checked + label{
+    transition: all ease .2s;
     background-color: var(--White);
     color: var(--Grey950);
 }
@@ -99,21 +103,51 @@ input[type='radio']:checked + label{
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    margin-top: 1.7vh;
-    margin-bottom: 5vh;
+    margin-top: 10px;
+    margin-bottom: 25px;
     
 }
 form{
+   
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 .btn{
     text-transform: uppercase;
-    min-height: 7vh;
-    height: 9vh;
+    height: 45px;
     border: 3px solid var(--Grey950);
-    border-radius: 4vw;
-    letter-spacing: .2rem;
-    font-weight: 700;
+    border-radius: 30px;
+    letter-spacing: .13rem;
+    font-size: .8rem;
+    font-weight: 600;
+    background-color: var(--Orange500);
+    cursor: pointer;
+}
+.btn:hover{
+    transition: all ease .2s;
+    background-color: var(--White);
+}
+.icon-thank-you{
+    order: -2;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    transform: scale(.9);
+}
+.rating-p{
+    order: -1;
+    background-color: var(--Grey900);
+    color: var(--Orange500);
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-bottom: 2px;
+}
+.p-wrap{
+    text-align: center;
+}
+.second{
+    align-items: center;
+}
+.hidden{
+    display: none;
 }
