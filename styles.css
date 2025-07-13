@@ -177,6 +177,7 @@ form{
          user-select: none;
         -webkit-user-select: none;
         pointer-events: none;
+        outline: none;
     }
 }
 @media (hover: none) {
