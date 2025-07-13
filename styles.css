@@ -171,32 +171,40 @@ form{
     display: none;
 }
 
+/* Добавьте эти правила в конец вашего CSS файла */
+
+/* 1. Общие настройки для всех интерактивных элементов */
+.btn,
+input[type="radio"] + label {
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* 2. Настройки только для touch-устройств */
 @media (hover: none) and (pointer: coarse) {
-  button, input, label, a {
-    -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
+  .btn,
+  input[type="radio"] + label {
     -webkit-touch-callout: none;
-    -webkit-tap-highlight-color: transparent;
-      outline: none;
-      user-select: none;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      -webkit-touch-callout: none;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      transform: translateZ(0);
+    user-select: none;
   }
-  input[type="radio"]:focus + label {
+  
+  input[type="radio"]:focus + label,
+  .btn:focus {
     outline: none;
     box-shadow: none;
   }
 }
-input[type="radio"] {
-  position: absolute;
-  opacity: 0;
-}
-input[type="radio"]:focus-visible + label {
-  box-shadow: 0 0 0 2px var(--Orange500);
-  outline: none;
+
+/* 3. Настройки только для десктопов (клавиатурная навигация) */
+@media (hover: hover) {
+  input[type="radio"]:focus-visible + label {
+    box-shadow: 0 0 0 2px var(--Orange500);
+    outline: none;
+  }
+  
+  .btn:focus-visible {
+    outline: 2px solid var(--Orange500);
+    outline-offset: 2px;
+  }
 }
