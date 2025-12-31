@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: interactive-rating-component-main
+  namespace: default
+spec:
+  selector:
+    app: interactive-rating-component-main-app
+  ports:
+    - port: 80
+      targetPort: 80
+  type: ClusterIP
